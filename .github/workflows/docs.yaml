@@ -22,11 +22,6 @@ jobs:
         with:
           # 选择要使用的 node 版本
           node-version: 20
-          # 缓存 pnpm 依赖
-          cache: pnpm
-
-      - name: Install pnpm
-        run: npm install -g pnpm@8
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
