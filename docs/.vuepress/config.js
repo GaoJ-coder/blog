@@ -3,7 +3,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-    base:'/',
+    base:'/blog',
     // 请不要忘记设置默认语言
     head: [['link', { rel: 'icon', href: '/images/favicon.png' }]],
     lang: 'zh-CN',
