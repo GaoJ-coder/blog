@@ -54,7 +54,7 @@ export default defineUserConfig({
                     sidebar:[
                         {
                             text: '基础知识',
-                            items:['Thread-Safety']
+                            items:['Thread-Safety','Object-Shared']
                         },
                         {
                             text:'第二章',
