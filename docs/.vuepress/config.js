@@ -27,15 +27,25 @@ export default defineUserConfig({
             { text: '首页', link: '/', icon: 'material-symbols:home-outline' },
             {
                 text: '读书笔记',
-                icon: 'mdi:idea',
+                icon: 'material-symbols:cognition-outline',
                 items: [
                     {
                         text: '多线程',
+                        icon: 'material-symbols:view-timeline-outline',
                         items: [
                             {
                                 text: 'Java并发编程实战',
                                 link: '/Java-Concurrency-in-Practice/',
-                                icon: 'carbon:server-proxy',
+                            }
+                        ]
+                    },
+                    {
+                        text:'前端知识',
+                        icon:'material-symbols:javascript',
+                        items: [
+                            {
+                                text: '前端知识积累',
+                                link: '/Front-End-Knowledge/',
                             }
                         ]
                     }
@@ -59,6 +69,16 @@ export default defineUserConfig({
                         {
                             text:'第二章',
                             items:[]
+                        }
+                    ]
+                },
+                {
+                    dir: 'Front-End-Knowledge',
+                    link:'/Front-End-Knowledge/',
+                    sidebar:[
+                        {
+                            text: 'CSS',
+                            items: ['Css']
                         }
                     ]
                 }
