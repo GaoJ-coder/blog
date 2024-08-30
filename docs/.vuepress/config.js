@@ -4,8 +4,9 @@ import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
     base:'/blog',
-    // 请不要忘记设置默认语言
-    head: [['link', { rel: 'icon', href: '/images/favicon.png' }]],
+    title: 'GaoJ`s Blog',
+    description: '记录、分享、收获、成长',
+    head: [['link', { rel: 'icon', href: '/blog/images/favicon.png' }]],
     lang: 'zh-CN',
     theme: plumeTheme({
         // 个人信息
@@ -48,6 +49,16 @@ export default defineUserConfig({
                                 link: '/Front-End-Knowledge/',
                             }
                         ]
+                    },
+                    {
+                        text: '命令',
+                        icon: 'material-symbols:order-approve-outline',
+                        items: [
+                            {
+                                text: '常用命令',
+                                link: '/Base-Command/'
+                            }
+                        ]
                     }
                 ]
             }
@@ -79,6 +90,16 @@ export default defineUserConfig({
                         {
                             text: 'CSS',
                             items: ['Css']
+                        }
+                    ]
+                },
+                {
+                    dir: 'Base-Command',
+                    link: '/Base-Command/',
+                    sidebar: [
+                        {
+                            text: '前端命令',
+                            items: ['Node基本命令']
                         }
                     ]
                 }
