@@ -6,7 +6,11 @@ export default defineUserConfig({
     base:'/blog',
     title: 'GaoJ`s Blog',
     description: '记录、分享、收获、成长',
-    head: [['link', { rel: 'icon', href: '/blog/images/favicon.png' }]],
+    head: [
+        ['link', { rel: 'icon', href: '/blog/images/favicon.png' }],
+        // 解决调用外部图片加载失败
+        ['meta', { name: 'referrer', content: 'no-referrer'}]
+    ],
     lang: 'zh-CN',
     theme: plumeTheme({
         // 个人信息
